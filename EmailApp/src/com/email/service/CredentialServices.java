@@ -44,7 +44,7 @@ public class CredentialServices {
 			System.out.println("Email ---> "+CredentialServices.getFirstName()+CredentialServices.getLastName()+"@"+ deptName +"."+CompanyName+".com");
 			
 			StringBuilder stringBuilder = new StringBuilder();
-			stringBuilder.append("Password---> spgl");
+			stringBuilder.append("Password---> ");
 			stringBuilder.append(generatePassword(8));
 			System.out.println(stringBuilder.toString());
 		}
@@ -98,7 +98,7 @@ public class CredentialServices {
 		      password[2] = specialCharacters.charAt(random.nextInt(specialCharacters.length()));
 		      password[3] = numbers.charAt(random.nextInt(numbers.length()));
 		   
-		      for(int i = 8; i< length ; i++) {
+		      for(int i = 4; i< length ; i++) {
 		         password[i] = combinedChars.charAt(random.nextInt(combinedChars.length()));
 		      }
 		      return password;
